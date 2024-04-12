@@ -1,0 +1,351 @@
+body{
+    background-color:lightgray;
+}
+/* start of navbar section */
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+.navbar{
+    background-color: navy;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 100px;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.logo a{
+    font-size: 40px;
+    font-weight: 610;
+    padding-left: 25px;
+    color: white;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    color: white;
+    font-size: 25px;
+    font-weight: 200px;
+    margin-right: 65px;
+}
+ul i{
+    color: white;
+    padding-left: 25px;
+    margin-right: 20px;
+}
+ul button{
+   font-size: 25px;
+   border-radius: 10px;
+   border: none;
+   cursor: pointer;
+   padding: 5px;
+   background-color: orange;
+}
+/* End of navbar section */
+.main-image{
+    padding-top: 20px;
+    margin-left: 50px;
+    width: 1000px;
+    height: 750px;
+    border-radius: 150px;
+}
+
+/* Start of home section */
+#homepage{
+    display: flex;
+}
+.hometext{
+ width: 40%;
+ padding-top: 280px;
+}
+.homeimg{
+    width: 60%;
+}
+
+.text-hl2{
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+}
+
+/* End of home section */
+
+/* Start of about section */
+#aboutpage{
+    padding-top: 100px;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: navy;
+}
+.about{
+    padding-left: 20px;
+    display: flex;
+}
+.about-mission{
+    width: 50%;
+}
+.about-vision{
+    width: 50%;
+}
+.image-mv1{
+    width: 500px;
+    height: 300px;
+    border-radius: 300px;
+    margin-left: 250px;
+}
+.passage{
+    text-align: center;
+    font-size: 25px;
+    padding: 38px;
+}
+/* End of about section */
+
+
+/* Start of Property Section */
+#propertypage{
+    transition: transform .5s;
+    padding-top: 100px;
+}
+.mainlist{
+    display: flex;
+}
+.head-img1{
+    width: 350px;
+    border-radius: 50px;
+}
+h2{
+    padding-left: 70px;
+    color: navy;
+}
+.price{
+    padding-left: 125px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.addCart{
+    margin-left: 100px;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 5px;
+}
+.addCart:hover{
+    margin-left: 100px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: orange;
+    cursor: pointer;
+    padding: 5px;
+}
+.listItems{
+    background-color: beige;
+    border-radius: 70px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 100px;
+    padding-bottom: 50px;
+}
+h3{
+    font-size: 40px;
+    text-align: center;
+}
+.btn{
+    font-size: 24px;
+    font-weight: 400;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 715px;
+    height: 50px;
+}
+.close{
+    font-size: 22px;
+    font-weight: 400;
+    border-radius: 0px;
+    padding: 5px;
+    background-color: orange;
+    border: none;
+    font-family: Poppins;
+    cursor: pointer;
+}
+.close:hover{
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: orange;
+    border: none;
+    font-family: Poppins;
+}
+.checkout{
+    font-size: 22px;
+    font-weight: 200;
+    border-radius: 0px;
+    padding: 5px;
+    background-color: orange;
+    border: none;
+    font-family: Poppins;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.checkout:hover{
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: orange;
+    border: none;
+    font-family: Poppins;
+}
+.cartTab{
+    width: 500px;
+    background-color: grey;
+    padding-left: 20px;
+    color: white;
+    position: fixed;
+    inset: 0 -400 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body .showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+body .showCart #propertypage{
+    transform: translateX(-250p);
+}
+.listCart .item img {
+    width: 100%;
+}
+.listCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: white;
+}
+.listCart .item:nth-child(even){
+    background-color: black;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+/* End of Property Section */
+
+
+/* Start of Footer section */
+#contactpage{
+    padding-top: 400px;
+}
+.last{
+   padding-left: 250px;
+   display: flex;
+   background-color: navy;
+   padding-top: 100px;
+   height:500px;
+}
+.place2{
+    margin-left: 500px;
+}
+.place2 i{
+    color: white
+    margin-top: 10px;
+    display: grid;
+}
+.fa-brands{
+    display: grid;
+}
+.lastone{
+    font-size: 35px;
+    color: orange;
+    text-align: center;
+}
+i{
+    color: white;
+}
+span{
+    color: white;
+    font-size: 25px;
+}
+/* End of Footer section */
+
+/* Start of SignUp section */
+
+#signuppage{
+    background-color: navy;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.titlecontact{
+    text-align: center;
+    font-size: 35px;
+    color: orange;
+    padding-left: 80px;
+    padding-bottom: 40px;
+}
+.signup{
+    padding-left: 20px;
+    display: flex;
+}
+form{
+    background-color: navy;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+label{
+    font-size: 30px;
+    padding-left: 80px;
+    color: orange;
+}
+input{
+    font-size: 30px;
+    margin-right: 680px;
+    margin-left: 750px;
+    border-radius: 10px;
+}
+button a{
+    font-size: 25px;
+    color: white;
+}
+.finalbtn{
+    font-size: 30px;
+    padding: 10px;
+    margin-right: 680px;
+    margin-left: 750px;
+    border-radius: 10px;
+    border: none;
+}
+.finalbtn:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+/* End of SignUp section */
