@@ -1,0 +1,37 @@
+HighLiving Real Estate Website
+
+This repository contains the code for the HighLiving Real Estate website, which is designed to provide users with information about available properties, company mission and vision, contact details, and a sign-up form for potential clients. Below is an overview of the files and functionalities included in this project:
+
+Files Included:
+. index.html: This file defines the structure of the website using HTML markup. It includes sections for the homepage, about page, property listings, contact information, and sign-up form.
+. style.css: This file contains the CSS styles to visually enhance the website, including styling for navigation bar, sections, images, forms, and footer.
+. script.js: This JavaScript file handles form validation and submission. It ensures that user inputs are validated before submission and sends user data to a local endpoint upon sign-up button click.
+Functionality:
+. Navigation Bar: The navigation bar allows users to navigate to different sections of the website, including the homepage, about page, property listings, contact information, and sign-up form.
+. Homepage: Provides a welcome message and an image introducing users to HighLiving Real Estate.
+. About Page: Presents the company's mission and vision statements along with corresponding images.
+. Property Listings: Displays available properties with images, prices, and an "Add to Cart" button.
+. Contact Information: Provides contact details including phone numbers, email address, and office locations.
+. Sign-Up Form: Allows potential clients to sign up by providing their full name, email, and password. Form validation ensures that inputs are correctly filled out before submission.
+
+How to Use:
+1. Clone this repository to your local machine using the command:
+bash
+Copy code
+git clone <repository-url>
+2. Open the index.html file in your web browser to view the HighLiving Real Estate website.
+
+Contribution Guidelines:
+. Contributions to enhance the design, add new features, or improve functionality are welcome. Please open an issue to discuss proposed changes before submitting a pull request.
+. Ensure adherence to coding standards and maintain consistency with existing code.
+. Provide clear and descriptive commit messages for all changes made.
+
+Credits:
+. This project was created by [Your Name].
+. Images used in the website are sourced from [Image Source].
+. Special thanks to [Contributor Name] for their contributions to the project.
+
+License:
+This project is licensed under the [""] License - see the LICENSE file for details.
+
+For any further questions or inquiries, please contact [kristiankoome@gmail.com].
